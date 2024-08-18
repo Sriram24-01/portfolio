@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriraman S portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3ae27ec603.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id ="header">
+    <div class ="container">
+        <nav>
+            <img src="images/Sriram.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header" id="move">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </li>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+           
+       
+    </nav>
+    <div class="headertext">
+        <p>REACT DEVELOPER</p>
+        <H1>Hi I am <span>Sriraman S</span><br>from India</H1>
+    </div>
+
+ </div>
+</div>
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.png.jpg">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-title">About me</h2>
+                <p>Tech enthusiast pursuing a degree in IT and passionate about exploring emerging technologies and developing innovative solutions. Seeking opportunities to apply technical skills and contribute to the IT industry.</p>
+                <div class="tab-titles">
+                    <p class="tablinks activelinks" onclick="opentab('skills')">Skills</p>
+                    <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                    <p class="tablinks" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="content active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing websites</li>
+                        <li><span>Web development</span><br>React-based websites</li>
+                        <li><span>Web development</span><br>Next Js based websites</li>
+                    </ul>
+                </div>
+                <div class="content" id="experience">
+                    <ul>
+                        <li><span>2021-current</span><br>Designing websites</li>
+                        <li><span>2021-2022</span><br>Graphic designing</li>
+                        <li><span>2022-2023</span><br>React-based websites</li>
+                    </ul>
+                </div>
+                <div class="content" id="education">
+                    <ul>
+                        <li><span>2019</span><br>Schooling at Velammal</li>
+                        <li><span>2021</span><br>12th at Velammal</li>
+                        <li><span>2021-present</span><br>B.Tech Information Technology</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h1>UI/UX DESIGN</h1>
+                <p>I have created a website design for my client using figma tools</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>WEB DESIGN</h1>
+                <p>I have created a website design for my client using html css and js I was a beginner and created it</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cannabis"></i>
+                <h1>Graphic designing</h1>
+                <p>I have created many poster to my client and worked as intern in graphic designing for softrate</p>
+                <a href="#">Learn More</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<!--- portfolio--->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/WhatsApp Image 2024-05-14 at 18.35.20_91588ff4.jpg">
+                <div class="layer">
+                    <h1>Driver Monitoring System For License Test</h1>
+                    <p>As part of a comprehensive approach to driver safety and 
+                        evaluation, I developed a Driver Monitoring System tailored specifically for license testing scenarios. This innovative project 
+                        aimed to enhance the assessment process by integrating real-time monitoring technologies into the testing environment.</p>
+                        <a href="#"><i class="fa-solid fa-id-card"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i> sriramkesavan24@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> 8072586350</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/sriram2401_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sriraman-s24/"><i class="fa-brands fa-linkedin"></i></a>
+                
+              </div>  
+              <a href="images/Sriraman_S_Cv_resume.pdf" class="btn btn2">Download CV</a>
+              
+
+        </div>
+        
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                <button type="submit"class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>© 2024 Sriraman. All rights reserved.</p>
+</div>
+<script>
+    var tablinks = document.querySelectorAll(".tablinks");
+    var content = document.querySelectorAll(".content");
+
+    function opentab(tabname) {
+        tablinks.forEach(function(link) {
+            link.classList.remove("activelinks");
+        });
+        content.forEach(function(tabcontent) {
+            tabcontent.classList.remove("active-tab");
+        });
+        event.currentTarget.classList.add("activelinks");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvipzjphC4L8dksF3y8HwHwZqSjGU_C20WYjwCw92qJgjxHrTyZUNScP1GftsadPUD/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
